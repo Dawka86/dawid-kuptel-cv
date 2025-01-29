@@ -1,0 +1,41 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  overflow: hidden;
+  display: block;
+}
+
+.my_photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 18px;
+  right: 10%;
+  transform: translateX(-50%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.list {
+   margin-top: 10px;
+   border: none;
+   padding:auto;
+}
+.skills-header {
+    display: flex; /* Używamy flexboxa, by elementy były w jednej linii */
+    align-items: center; /* Wyrównanie elementów w pionie */
+  }
+  
+
+  
+ 
+  
