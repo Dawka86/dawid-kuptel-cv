@@ -37,7 +37,6 @@ export default function App() {
                   <span>
                     <Rotate />
                   </span>
-                  Skills
                 </h2>
               </section>
 
