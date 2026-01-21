@@ -20,7 +20,7 @@ const courses = [
     link: "https://navoica.pl/certificates/9b6aa671a332408fa463434f653d654a",
   },
   {
-    title: "Angular - The Complete Guide - Currently learning",
+    title: "Angular - The Complete Guide",
     institution: "",
     paltforma: "Udemy",
     link: "", 
