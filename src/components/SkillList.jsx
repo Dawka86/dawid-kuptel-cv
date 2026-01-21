@@ -1,5 +1,5 @@
 const skills = {
-  frontend: ["HTML5", "CSS3", "JavaScript (ES6+)", "React.js","GSAP (basic)"],
+  frontend: ["HTML5", "CSS3", "JavaScript (ES6+)", "React.js","GSAP (basic)","Angular"],
   backend: ["Express.js", "Node.js"],
   database: ["PostgreSQL"],
   tools: ["Git", "VS Code","Figma - (Basic)", "CodeSandbox"]
