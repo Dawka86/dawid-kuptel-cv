@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
 
-export default function Rotate() {
+export default function Rotate(props) {
   const ball = {
     width: 100,
     height: 60,
-    backgroundColor: "#dd00ee",
+    backgroundImage: "linear-gradient(90deg, #4facfe 0%, #00f2fe 100%)",
     borderRadius: 5,
     marginRight: 15,
     marginBottom: 0,
@@ -15,6 +15,7 @@ export default function Rotate() {
     fontWeight: "bold",
     fontSize: "18px",
     textAlign: "center",
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
   };
   return (
     <motion.div
@@ -26,6 +27,6 @@ export default function Rotate() {
             }}
             style={ball}
        
-    >Skills</motion.div>
+    >{props.name}</motion.div>
   );
 }

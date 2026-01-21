@@ -1,8 +1,14 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-small;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
 }
-
+.main-container {
+  background: linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+}
 
 header {
   font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +18,6 @@ header {
   padding: 10px;
   overflow: hidden;
   display: block;
- 
 }
 
 .my_photo {
@@ -25,18 +30,48 @@ header {
   right: 10%;
   transform: translateX(-50%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  outline: solid 0.5px white;
 }
 .list {
-   margin-top: 10px;
-   border: none;
-   padding:auto;
+  margin-top: 10px;
+  border: none;
+  padding: auto;
 }
 .skills-header {
-    display: flex; /* Używamy flexboxa, by elementy były w jednej linii */
-    align-items: center; /* Wyrównanie elementów w pionie */
-  }
-  
+  display: flex;
+  align-items: center;
+}
+.main-tiles {
+  background-color: #ffffff;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  
- 
-  
+.footer a {
+  color: black;
+}
+.footer a:hover {
+  color: rgb(137, 137, 231);
+}
+.project_name {
+  font-size: larger;
+}
+.githubIcon{
+  font-size: large;
+  color: black;
+}
+.qr-section{
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+.qr-section p {
+  font-weight: 500;
+  font-size: 14px;
+}
+.QR{
+  box-shadow: 1px 1px 15px black;
+}
+

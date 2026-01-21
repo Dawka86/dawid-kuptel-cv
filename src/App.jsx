@@ -1,24 +1,39 @@
-
-import './App.css';
-import List from './components/List';
-import Rotate from './components/RotatePoints';
+import "./App.css";
+import SkillList from "./components/SkillList";
+import CourseList from "./components/CourseList";
+import Rotate from "./components/RotatePoints";
+import Footer from "./components/Footer";
+import ProjectList from "./components/Projects";
+import EducationList from "./components/Education";
+import NameDrawing from "./components/DrawName";
+import QR from "./components/QR";
+import GsapAnime from "./components/Gsap";
 
 export default function App() {
   return (
-    <>
-      <div className="container py-4">
-        <header className="pb-3 mb-4">Dawid Kuptel</header>
-        <div className="p-5 mb-4 bg-light rounded-3">
+    <div className="main-container">
+      <div className="container py-4 ">
+        <header>
+          <NameDrawing />
+        </header>
+
+        <div className="p-5 mb-4 main-tiles rounded-3 shadow-lg">
           <div className="container py-5">
-            <h1 className="display-5 fw-bold">Custom jumbotron</h1>
+            <h1 className="display-5 fw-bold">Frontend Developer</h1>
             <div className="row">
               <div className="col-md-6 fs-4">
-                Using a series of utilities, you can create this jumbotron, just
-                like the one in previous versions of Bootstrap. Check out the
-                examples below for how you can remix and restyle it to your
-                liking.
+                I am a beginner frontend developer with a passion for creating
+                modern web applications. I am independently developing my skills
+                by working on personal projects in React, JavaScript, and
+                Node.js. I am looking for my first professional experience that
+                will allow me to continue growing and gain practical skills.
               </div>
               <div className="col-md-6 fs-4 text-center">
+                <div className="qr-section">
+                  <p>Scan to see all my projects. </p>
+                  <GsapAnime />
+                </div>
+
                 <img
                   src="./pictures/moje.png"
                   className="my_photo"
@@ -31,33 +46,66 @@ export default function App() {
 
         <div className="row align-items-md-stretch">
           <div className="col-md-6">
-            <div className="h-100 p-5 bg-light rounded-3">
+            <div className="h-100 p-5 main-tiles rounded-3 shadow-lg">
               <section>
                 <h2 className="skills-header">
                   <span>
-                    <Rotate />
+                    <Rotate name="Skills" />
                   </span>
                 </h2>
               </section>
-
               <p>
-                <List />
+                <SkillList />
               </p>
             </div>
           </div>
           <div className="col-md-6">
-            <div className="h-100 p-5 bg-light border rounded-3">
-              <h2>Add borders</h2>
+            <div className="h-100 p-5 main-tiles rounded-3 shadow-lg">
+              <section>
+                <h2 className="skills-header">
+                  <span>
+                    <Rotate name="Courses" />
+                  </span>
+                </h2>
+              </section>
               <p>
-                Or, keep it light and add a border for some added definition to
-                the boundaries of your content. Be sure to look under the hood
-                at the source HTML here as ve adjusted the alignment and sizing
-                of both s content for equal-height.
+                <CourseList />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row align-items-md-stretch mt-4">
+          <div className="col-md-6">
+            <div className="h-100 p-5 main-tiles rounded-3 shadow-lg">
+              <section>
+                <h2 className="skills-header">
+                  <span>
+                    <Rotate name="Projects" />
+                  </span>
+                </h2>
+              </section>
+              <p>
+                <ProjectList />
+              </p>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="h-100 p-5 main-tiles rounded-3 shadow-lg">
+              <section>
+                <h2 className="skills-header">
+                  <span>
+                    <Rotate name="Education" />
+                  </span>
+                </h2>
+              </section>
+              <p>
+                <EducationList />
               </p>
             </div>
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
