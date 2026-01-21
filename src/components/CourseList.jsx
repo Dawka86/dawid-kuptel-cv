@@ -18,7 +18,13 @@ const courses = [
         paltforma:"Navoica",
         link:"https://navoica.pl/certificates/9b6aa671a332408fa463434f653d654a",
 
-    }
+    },
+    {   title:`"Angular - The Complete Guide"`,
+      institution:"",
+      paltforma:"Udemy",
+      link:"Currently learning",
+
+  }
 ];
 
 export default function CourseList() {

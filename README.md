@@ -1,3 +1,4 @@
+
 # Dawid Kuptel CV
 
 Moje portfolio i CV w React + Vite
@@ -9,3 +10,5 @@ Moje portfolio i CV w React + Vite
 - React
 - Vite
 - CSS
+
+
